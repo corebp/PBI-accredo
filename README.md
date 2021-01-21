@@ -15,5 +15,5 @@ Create a *server.json* file with your Server Hostname, Version (Mercury/Saturn) 
 - [x] Configure fetch from server
 - [x] Transform data from JSON to table
 - [x] Generify the database connection using external vars
-- [] Set up data pagination
-- [] Figure out a method of looping over multiple endpoints
+- [ ] Set up data pagination
+- [ ] Figure out a method of looping over multiple endpoints
