@@ -10,3 +10,10 @@ Create a *server.json* file with your Server Hostname, Version (Mercury/Saturn) 
 - Start Power BI Desktop
 - Ensure Custom Connectors are enabled (File/Options and Settings/Options/Global/Security/Data Extensions)
 - Add Accredo(Beta) as new data source, found under Other
+
+### To Do
+- [x] Configure fetch from server
+- [x] Transform data from JSON to table
+- [x] Generify the database connection using external vars
+- [] Set up data pagination
+- [] Figure out a method of looping over multiple endpoints
