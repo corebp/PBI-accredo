@@ -1,5 +1,4 @@
-﻿// This file contains your Data Connector logic
-section Accredo;
+﻿section Accredo;
 
 ExpandColumns = (tbl, col) => 
     let 
@@ -57,18 +56,14 @@ ScopeImpl = (Scope as text) =>
     in
         ExpandColumns(ListToTable(source[value]), "Column1");
 
-// Data Source Kind description
 Accredo = [
     Authentication = [
-        // Key = [],
         UsernamePassword = [],
-        // Windows = [],
         Implicit = []
     ],
     Label = Extension.LoadString("DataSourceLabel")
 ];
 
-// Data Source UI publishing description
 Accredo.Publish = [
     Beta = true,
     Category = "Other",
