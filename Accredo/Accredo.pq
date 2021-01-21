@@ -27,13 +27,6 @@ shared Connect = (hostname as text, version as text, company as text) =>
 shared Accredo.Contents = Value.ReplaceType(ScopeImpl, ScopeType);
 
 ScopeType = type function(
-Hostname as (type text meta [
-        Documentation.Description = "Hostname"
-        ]),
-        Version as (type text meta [
-        Documentation.Description = "Accredo Version",
-        Documentation.AllowedValues = {"mercury","saturn"}
-        ]),
     Endpoint as (type text meta [
         Documentation.Description = "Endpoint",
         Documentation.AllowedValues = {
@@ -55,7 +48,11 @@ Hostname as (type text meta [
 
 ScopeImpl = (Scope as text) =>
     let        
-        res = Connect("https://ad.tpfc.co.nz:6571/", "mercury", "PASSIVE"),
+        json = Json.Document(Extension.Contents("server.json")),
+        hostname = json[hostname],
+        version = json[version],
+        company = json[company],
+        res = Connect(hostname, version, company),
         source = Json.Document(Web.Contents(res & Scope))
     in
         ExpandColumns(ListToTable(source[value]), "Column1");
