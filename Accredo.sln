@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Accredo", "Accredo\Accredo.mproj", "{BD9827DF-C990-462B-99EB-7DA298DE692C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD9827DF-C990-462B-99EB-7DA298DE692C}.Debug|x86.ActiveCfg = Debug|x86
+		{BD9827DF-C990-462B-99EB-7DA298DE692C}.Debug|x86.Build.0 = Debug|x86
+		{BD9827DF-C990-462B-99EB-7DA298DE692C}.Release|x86.ActiveCfg = Release|x86
+		{BD9827DF-C990-462B-99EB-7DA298DE692C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2630F66-9714-48BF-84E2-CCAAD3D4F18D}
+	EndGlobalSection
+EndGlobal
